@@ -1,0 +1,112 @@
+:root {
+    --my-pink: rgb(198, 159, 153); 
+    --my-pink-transparent: rgba(198, 159, 153, 0.9); 
+    --my-purple: rgb(83, 59, 77);
+    --my-purple-transparent: rgba(83, 59, 77, 0.9);
+    --my-dark-purple: rgb(63, 39, 57);
+    --my-dark-gray: rgb(100, 100, 100);
+    --my-dark-blue: rgb(44, 62, 80);
+    --my-hyperlink-blue: rgb(40, 100, 140);
+}
+
+.centered {
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    color: var(--my-hyperlink-blue);
+}
+
+/*Main content*/
+.section_bg_odd {
+    background-color: var(--my-pink);
+}
+
+.section_bg_even {
+    background-color: var(--my-purple);
+}
+
+.text_section_odd {
+    color: var(--my-dark-blue) !important;
+}
+
+.text_section_even {
+    color: rgb(256, 256, 256) !important;
+}
+
+/*Pricing Table*/
+.pricing_title{
+    font-weight: bold;
+    border-bottom: 2px solid rgb(256, 256, 256);
+}
+
+#grid-container {
+    display: grid;
+    width: 800px;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+}
+
+/*Modal*/
+.modal_popup_color {
+    background-color: var(--my-purple-transparent) !important;
+}
+
+.modal-background {
+    background-color: var(--my-pink) !important; 
+    /*do not remove .modal-content this overrides, it has stuff besides bg color*/
+}
+
+.modal-x-button {
+    color: var(--my-purple) !important;
+    /*do not remove .modal-content this overrides, it has stuff besides bg color*/
+}
+
+.modal-bottom-button {
+    background-color: var(--my-purple);
+    border-color: var(--my-dark-purple);
+    color: #fff; /*text color*/
+}
+
+.modal-bottom-button:hover {
+    color: var(--my-dark-gray);
+}
+
+.modal-bottom-button:focus {
+    box-shadow:  0 0 0 0.3rem rgb(63 39 57 / 50%);
+}
+
+
+/*Navigation bar*/
+.nav_button {
+    background-color: var(--my-purple);
+}
+
+a.nav_options:hover {
+    color: var(--my-purple) !important;
+}
+
+a.nav_options:active {
+    background-color: var(--my-pink) !important;
+    background: var(--my-pink) !important;
+}
+
+a.nav-link.active{
+    background: var(--my-pink) !important;
+}
+
+/*Top and bottom bars*/
+.top_bottom_bar_colors {
+    background-color: #827B7D !important;
+}
+
+.copyright_bg {
+    background-color: #524B4D;
+}
+
+
+
+.list_centered {
+    border: 0px;
+}
